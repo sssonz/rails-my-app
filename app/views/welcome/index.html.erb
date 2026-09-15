@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h1>Выбирай себе любой</h1>
+
+  <%
+    colors = [
+      ["Красный", "red", "pic1.png"],
+      ["Синий", "blue", "pic2.png"],
+      ["Голубой", "cyan", "pic3.png"]
+    ]
+  %>
+
+  <div class="colors-list">
+
+    <% colors.each do |color| %>
+
+      <%= render "counter", color: color %>
+
+    <% end %>
+
+  </div>
+
+</div>
